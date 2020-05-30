@@ -23,55 +23,128 @@ ul_element_effect_2 = document.getElementById("ul_element_s_2");
 ul_element_effect_3 = document.getElementById("ul_element_s_3");
 ul_element_effect_4 = document.getElementById("ul_element_s_4");
 ul_element_effect_5 = document.getElementById("ul_element_s_5");
+font_bold_0 = document.getElementById("font_deco_bold_0");
+font_bold_1 = document.getElementById("font_deco_bold_1");
+font_bold_2 = document.getElementById("font_deco_bold_2");
+font_bold_3 = document.getElementById("font_deco_bold_3");
+font_bold_4 = document.getElementById("font_deco_bold_4");
+font_bold_5 = document.getElementById("font_deco_bold_5");
+// font normals
+font_normal_0 = document.getElementById("font_deco_normal_0");
+font_normal_1 = document.getElementById("font_deco_normal_1");
+font_normal_2 = document.getElementById("font_deco_normal_2");
+font_normal_3 = document.getElementById("font_deco_normal_3");
+font_normal_4 = document.getElementById("font_deco_normal_4");
+font_normal_5 = document.getElementById("font_deco_normal_5");
+font_normal_6 = document.getElementById("font_deco_normal_6");
+font_normal_7 = document.getElementById("font_deco_normal_7");
+font_normal_8 = document.getElementById("font_deco_normal_8");
+font_normal_9 = document.getElementById("font_deco_normal_9");
+font_normal_10 = document.getElementById("font_deco_normal_10");
 // variable lists.
 // javascript must be defined with different effects.
 function ul_element_effectActiv_0()
 {
 	ul_element_effect_0.style.background = "grey";
+	font_bold_0.style.color = "black";
+	font_effect_0.style.borderBottomColor = "black";
+	font_effect_1.style.borderBottomColor = "black";
+	font_effect_2.style.borderBottomColor = "black";
+	font_effect_3.style.borderBottomColor = "black";
+	font_normal_0.style.color ="black";
+	font_normal_1.style.color ="black";
+	font_normal_2.style.color ="black";
+
 }
 function ul_element_effectDeac_0()
 {
 	ul_element_effect_0.style.background = "red";
+	font_bold_0.style.color = "white"; 
+	font_effect_0.style.borderBottomColor = "white";
+	font_effect_1.style.borderBottomColor = "white";
+	font_effect_2.style.borderBottomColor = "white";
+	font_effect_3.style.borderBottomColor = "white";
+	font_normal_0.style.color ="white";
+	font_normal_1.style.color ="white";
+	font_normal_2.style.color ="white";
+	
 }
 function ul_element_effectActiv_1()
 {
 	ul_element_effect_1.style.background = "grey";
+	font_bold_1.style.color = "black";
+	font_effect_4.style.borderBottomColor = "black";
+	font_effect_5.style.borderBottomColor = "black";
+	font_effect_6.style.borderBottomColor = "black";
+	font_normal_3.style.color = "black";
+	font_normal_4.style.color = "black";
 }
 function ul_element_effectDeac_1()
 {
 	ul_element_effect_1.style.background = "blue";
+	font_bold_1.style.color = "white"; 
+	font_effect_4.style.borderBottomColor = "white";
+	font_effect_5.style.borderBottomColor = "white";
+	font_effect_6.style.borderBottomColor = "white";
+	font_normal_3.style.color = "white";
+	font_normal_4.style.color = "white";
 }
 function ul_element_effectActiv_2()
 {
 	ul_element_effect_2.style.background = "grey";
+	font_bold_2.style.color = "black";
+	font_effect_7.style.borderBottomColor = "black";
+	font_effect_8.style.borderBottomColor = "black";
+	font_effect_9.style.borderBottomColor = "black";
+	font_normal_5.style.color = "black";
+	font_normal_6.style.color = "black";
+
 }
 function ul_element_effectDeac_2()
 {
 	ul_element_effect_2.style.background = "green";
+	font_bold_2.style.color = "white"; 
+	font_effect_7.style.borderBottomColor = "white";
+	font_effect_8.style.borderBottomColor = "white";
+	font_effect_9.style.borderBottomColor = "white";
+	font_normal_5.style.color = "white";
+	font_normal_6.style.color = "white";
 }
 function ul_element_effectActiv_3()
 {
 	ul_element_effect_3.style.background = "grey";
+	font_bold_3.style.color = "black";
+
 }
 function ul_element_effectDeac_3()
 {
 	ul_element_effect_3.style.background = "yellow";
+	font_bold_3.style.color = "white"; 
+
 }
 function ul_element_effectActiv_4()
 {
 	ul_element_effect_4.style.background = "grey";
+	font_bold_4.style.color = "black";
+
 }
 function ul_element_effectDeac_4()
 {
 	ul_element_effect_4.style.background = "orange";
+	font_bold_4.style.color = "white"; 
+
 }
 function ul_element_effectActiv_5()
 {
 	ul_element_effect_5.style.background = "grey";
+	font_bold_5.style.color = "black";
+
 }
 function ul_element_effectDeac_5()
 {
 	ul_element_effect_5.style.background = "black";
+	font_bold_5.style.color = "white"; 
+
 }
 var x = -1;
 function slidebar_button()
@@ -115,6 +188,8 @@ function slidebar_button()
 		font_effect_15.style.borderBottomColor ="black";
 		font_effect_16.style.width = "0px";
 		font_effect_16.style.borderBottomColor ="black";
+		//font colors and properties
+		font_bold_0.style.color = "black";
 		
 	}
 	if(x == 1)
@@ -154,8 +229,8 @@ function slidebar_button()
 		font_effect_15.style.borderBottomColor ="white";
 		font_effect_16.style.width = "100px";
 		font_effect_16.style.borderBottomColor ="white";
-		
-		
+		//font color and properties
+		font_bold_0.style.color = "white"; 
 	}
 	if(x == 2)
 	{
@@ -195,5 +270,7 @@ function slidebar_button()
 		font_effect_15.style.borderBottomColor ="black";
 		font_effect_16.style.width = "0px";
 		font_effect_16.style.borderBottomColor ="black";
+		//font colors and properties
+		font_bold_0.style.color = "black";
 	}
 }
