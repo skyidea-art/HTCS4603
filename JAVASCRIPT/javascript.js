@@ -45,7 +45,7 @@ font_normal_10 = document.getElementById("font_deco_normal_10");
 // javascript must be defined with different effects.
 function ul_element_effectActiv_0()
 {
-	ul_element_effect_0.style.background = "grey";
+	ul_element_effect_0.style.background = "white";
 	font_bold_0.style.color = "black";
 	font_effect_0.style.borderBottomColor = "black";
 	font_effect_1.style.borderBottomColor = "black";
@@ -71,7 +71,7 @@ function ul_element_effectDeac_0()
 }
 function ul_element_effectActiv_1()
 {
-	ul_element_effect_1.style.background = "grey";
+	ul_element_effect_1.style.background = "white";
 	font_bold_1.style.color = "black";
 	font_effect_4.style.borderBottomColor = "black";
 	font_effect_5.style.borderBottomColor = "black";
@@ -81,7 +81,7 @@ function ul_element_effectActiv_1()
 }
 function ul_element_effectDeac_1()
 {
-	ul_element_effect_1.style.background = "blue";
+	ul_element_effect_1.style.background = "#c4c2bb";
 	font_bold_1.style.color = "white"; 
 	font_effect_4.style.borderBottomColor = "white";
 	font_effect_5.style.borderBottomColor = "white";
@@ -91,7 +91,7 @@ function ul_element_effectDeac_1()
 }
 function ul_element_effectActiv_2()
 {
-	ul_element_effect_2.style.background = "grey";
+	ul_element_effect_2.style.background = "white";
 	font_bold_2.style.color = "black";
 	font_effect_7.style.borderBottomColor = "black";
 	font_effect_8.style.borderBottomColor = "black";
@@ -102,7 +102,7 @@ function ul_element_effectActiv_2()
 }
 function ul_element_effectDeac_2()
 {
-	ul_element_effect_2.style.background = "green";
+	ul_element_effect_2.style.background = "#c4c2bb";
 	font_bold_2.style.color = "white"; 
 	font_effect_7.style.borderBottomColor = "white";
 	font_effect_8.style.borderBottomColor = "white";
@@ -112,40 +112,61 @@ function ul_element_effectDeac_2()
 }
 function ul_element_effectActiv_3()
 {
-	ul_element_effect_3.style.background = "grey";
+	ul_element_effect_3.style.background = "white";
 	font_bold_3.style.color = "black";
+	font_effect_10.style.borderBottomColor = "black";
+	font_effect_11.style.borderBottomColor = "black";
+	font_effect_12.style.borderBottomColor = "black";
+	font_normal_7.style.color = "black";
+	font_normal_8.style.color = "black";
 
 }
 function ul_element_effectDeac_3()
 {
-	ul_element_effect_3.style.background = "yellow";
+	ul_element_effect_3.style.background = "#c4c2bb";
 	font_bold_3.style.color = "white"; 
-
+	font_effect_10.style.borderBottomColor = "white";
+	font_effect_11.style.borderBottomColor = "white";
+	font_effect_12.style.borderBottomColor = "white";
+	font_normal_7.style.color = "white";
+	font_normal_8.style.color = "white";
 }
 function ul_element_effectActiv_4()
 {
-	ul_element_effect_4.style.background = "grey";
+	ul_element_effect_4.style.background = "white";
 	font_bold_4.style.color = "black";
-
+	font_effect_13.style.borderBottomColor = "black";
+	font_effect_14.style.borderBottomColor = "black";
+	font_effect_15.style.borderBottomColor = "black";
+	font_normal_9.style.color = "black";
+	font_normal_10.style.color = "black";
 }
 function ul_element_effectDeac_4()
 {
-	ul_element_effect_4.style.background = "orange";
+	ul_element_effect_4.style.background = "#c4c2bb";
 	font_bold_4.style.color = "white"; 
+	font_effect_13.style.borderBottomColor = "white";
+	font_effect_14.style.borderBottomColor = "white";
+	font_effect_15.style.borderBottomColor = "white";
+	font_normal_9.style.color = "white";
+	font_normal_10.style.color = "white";
 
 }
 function ul_element_effectActiv_5()
 {
-	ul_element_effect_5.style.background = "grey";
+	ul_element_effect_5.style.background = "white";
 	font_bold_5.style.color = "black";
-
+	font_effect_16.style.borderBottomColor ="black";
 }
 function ul_element_effectDeac_5()
 {
-	ul_element_effect_5.style.background = "black";
+	ul_element_effect_5.style.background = "#c4c2bb";
 	font_bold_5.style.color = "white"; 
-
+	font_effect_16.style.borderBottomColor ="white";
 }
+
+//the end of the functions 
+
 var x = -1;
 function slidebar_button()
 {
@@ -190,6 +211,23 @@ function slidebar_button()
 		font_effect_16.style.borderBottomColor ="black";
 		//font colors and properties
 		font_bold_0.style.color = "black";
+		font_bold_1.style.color = "black";
+		font_bold_2.style.color = "black";
+		font_bold_3.style.color = "black";
+		font_bold_4.style.color = "black";
+		font_bold_5.style.color = "black";
+		//font colors and normals
+		font_normal_0.style.color = "black";
+		font_normal_1.style.color = "black";
+		font_normal_2.style.color = "black";
+		font_normal_3.style.color = "black";
+		font_normal_4.style.color = "black";
+		font_normal_5.style.color = "black";
+		font_normal_6.style.color = "black";
+		font_normal_7.style.color = "black";
+		font_normal_8.style.color = "black";
+		font_normal_9.style.color = "black";
+		font_normal_10.style.color = "black";
 		
 	}
 	if(x == 1)
@@ -229,8 +267,25 @@ function slidebar_button()
 		font_effect_15.style.borderBottomColor ="white";
 		font_effect_16.style.width = "100px";
 		font_effect_16.style.borderBottomColor ="white";
-		//font color and properties
-		font_bold_0.style.color = "white"; 
+		//font colors and properties
+		font_bold_0.style.color = "white";
+		font_bold_1.style.color = "white";
+		font_bold_2.style.color = "white";
+		font_bold_3.style.color = "white";
+		font_bold_4.style.color = "white";
+		font_bold_5.style.color = "white";
+		//font colors and normals
+		font_normal_0.style.color = "white";
+		font_normal_1.style.color = "white";
+		font_normal_2.style.color = "white";
+		font_normal_3.style.color = "white";
+		font_normal_4.style.color = "white";
+		font_normal_5.style.color = "white";
+		font_normal_6.style.color = "white";
+		font_normal_7.style.color = "white";
+		font_normal_8.style.color = "white";
+		font_normal_9.style.color = "white";
+		font_normal_10.style.color = "white";
 	}
 	if(x == 2)
 	{
@@ -272,5 +327,22 @@ function slidebar_button()
 		font_effect_16.style.borderBottomColor ="black";
 		//font colors and properties
 		font_bold_0.style.color = "black";
+		font_bold_1.style.color = "black";
+		font_bold_2.style.color = "black";
+		font_bold_3.style.color = "black";
+		font_bold_4.style.color = "black";
+		font_bold_5.style.color = "black";
+		//font colors and normals
+		font_normal_0.style.color = "black";
+		font_normal_1.style.color = "black";
+		font_normal_2.style.color = "black";
+		font_normal_3.style.color = "black";
+		font_normal_4.style.color = "black";
+		font_normal_5.style.color = "black";
+		font_normal_6.style.color = "black";
+		font_normal_7.style.color = "black";
+		font_normal_8.style.color = "black";
+		font_normal_9.style.color = "black";
+		font_normal_10.style.color = "black";
 	}
 }
