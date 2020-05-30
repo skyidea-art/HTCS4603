@@ -43,6 +43,9 @@ font_normal_9 = document.getElementById("font_deco_normal_9");
 font_normal_10 = document.getElementById("font_deco_normal_10");
 // variable lists.
 // javascript must be defined with different effects.
+chat_size_0 = document.getElementById("chat_open");
+
+
 function ul_element_effectActiv_0()
 {
 	ul_element_effect_0.style.background = "white";
@@ -166,6 +169,27 @@ function ul_element_effectDeac_5()
 }
 
 //the end of the functions 
+var a = -1;
+function open_closechat()
+{
+	a+=1;
+	if(a == 0)
+	{
+		chat_size_0.style.width = "0px";
+		//alert(a);
+	}
+	if(a == 1)
+	{
+		chat_size_0.style.width = "400px";
+		//alert(a);
+	}
+	if(a == 2)
+	{
+		chat_size_0.style.width = "0px";
+		a = 0;
+		//alert(a);
+	}
+}
 
 var x = -1;
 function slidebar_button()

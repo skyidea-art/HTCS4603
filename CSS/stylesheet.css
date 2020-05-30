@@ -56,6 +56,8 @@
 #ul_element_s_3{ list-style-type: none; /*border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
 #ul_element_s_4{ list-style-type: none;/* border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
 #ul_element_s_5{ list-style-type: none; /*border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
+/* this is for chat add on */
+#chat_open{float:right; /* border:red solid 1px; */width:0px; height: 100%; transition: 0.5s; background: grey;}
 .li_lists{
 	width:200px;
 }
