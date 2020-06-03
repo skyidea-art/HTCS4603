@@ -44,7 +44,7 @@ font_normal_10 = document.getElementById("font_deco_normal_10");
 // variable lists.
 // javascript must be defined with different effects.
 chat_size_0 = document.getElementById("chat_open");
-
+slide_fixed_0 = document.getElementById("slide_button_s");
 
 function ul_element_effectActiv_0()
 {
@@ -84,7 +84,7 @@ function ul_element_effectActiv_1()
 }
 function ul_element_effectDeac_1()
 {
-	ul_element_effect_1.style.background = "#c4c2bb";
+	ul_element_effect_1.style.background = "#ff5733";
 	font_bold_1.style.color = "white"; 
 	font_effect_4.style.borderBottomColor = "white";
 	font_effect_5.style.borderBottomColor = "white";
@@ -105,7 +105,7 @@ function ul_element_effectActiv_2()
 }
 function ul_element_effectDeac_2()
 {
-	ul_element_effect_2.style.background = "#c4c2bb";
+	ul_element_effect_2.style.background = "#3355ff";
 	font_bold_2.style.color = "white"; 
 	font_effect_7.style.borderBottomColor = "white";
 	font_effect_8.style.borderBottomColor = "white";
@@ -126,7 +126,7 @@ function ul_element_effectActiv_3()
 }
 function ul_element_effectDeac_3()
 {
-	ul_element_effect_3.style.background = "#c4c2bb";
+	ul_element_effect_3.style.background = "#6eff33";
 	font_bold_3.style.color = "white"; 
 	font_effect_10.style.borderBottomColor = "white";
 	font_effect_11.style.borderBottomColor = "white";
@@ -146,7 +146,7 @@ function ul_element_effectActiv_4()
 }
 function ul_element_effectDeac_4()
 {
-	ul_element_effect_4.style.background = "#c4c2bb";
+	ul_element_effect_4.style.background = "#ffef2b";
 	font_bold_4.style.color = "white"; 
 	font_effect_13.style.borderBottomColor = "white";
 	font_effect_14.style.borderBottomColor = "white";
@@ -163,7 +163,7 @@ function ul_element_effectActiv_5()
 }
 function ul_element_effectDeac_5()
 {
-	ul_element_effect_5.style.background = "#c4c2bb";
+	ul_element_effect_5.style.background = "#565656";
 	font_bold_5.style.color = "white"; 
 	font_effect_16.style.borderBottomColor ="white";
 }
@@ -198,6 +198,8 @@ function slidebar_button()
 	//alert(x);
 	if(x == 0)
 	{
+		//button for slide.
+		slide_fixed_0.style.marginLeft = "5px";
 		slide_comp_0.style.width = "0px";
 		font_effect_0.style.width = "0px";
 		font_effect_0.style.borderBottomColor ="black";
@@ -256,6 +258,7 @@ function slidebar_button()
 	}
 	if(x == 1)
 	{
+		slide_fixed_0.style.marginLeft = "200px";
 		slide_comp_0.style.width = "200px";
 		font_effect_0.style.width = "100px";
 		font_effect_0.style.borderBottomColor ="white";
@@ -314,6 +317,7 @@ function slidebar_button()
 	if(x == 2)
 	{
 		x = 0;
+		slide_fixed_0.style.marginLeft = "5px";
 		slide_comp_0.style.width = "0px";
 		font_effect_0.style.width = "0px";
 		font_effect_0.style.borderBottomColor ="black";

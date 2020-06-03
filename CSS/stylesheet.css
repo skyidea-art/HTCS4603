@@ -1,16 +1,7 @@
 /* published APi for text*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-#slide_menu_bar_01_s
-{
-
-	height:100%;
-	width:0px;
-	overflow:hidden;
-	float:left;
-	transition: 0.7s;
-	background: #dbd9d3;
-}
+/* this is slide bar properties */
+#slide_menu_bar_01_s{	height:100%;	width:0px;	overflow:hidden;	float:left;	transition: 0.7s;	background: #dbd9d3;}
 /* font settings and properties*/
 #font_deco_bold_0{	font-family: 'Roboto', sans-serif;	text-decoration: none;	list-style-type: none;color:white;font-weight: 500; transition:1.2s;}
 #font_deco_bold_1{	font-family: 'Roboto', sans-serif;	text-decoration: none;	list-style-type: none;color:white;font-weight: 500;transition:1.2s;}
@@ -51,14 +42,16 @@
 #font_deco_effect_15{	border-bottom:black solid 1.5px;	width:0px;	transition: 1.2s;	margin-left: 8px;}
 #font_deco_effect_16{	border-bottom:black solid 1.5px;	width:0px;	transition: 1.2s;}
 #ul_element_s_0{ list-style-type: none; /* border: red solid 1px;*/ background: red; transition: 0.4s; }
-#ul_element_s_1{ list-style-type: none; /*border: red solid 1px; */background: #c4c2bb; transition: 0.4s; }
-#ul_element_s_2{ list-style-type: none;/*border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
-#ul_element_s_3{ list-style-type: none; /*border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
-#ul_element_s_4{ list-style-type: none;/* border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
-#ul_element_s_5{ list-style-type: none; /*border: red solid 1px;*/ background: #c4c2bb; transition: 0.4s; }
+#ul_element_s_1{ list-style-type: none; /*border: red solid 1px; */background: #ff5733; transition: 0.4s; }
+#ul_element_s_2{ list-style-type: none;/*border: red solid 1px;*/ background: #3355ff; transition: 0.4s; }
+#ul_element_s_3{ list-style-type: none; /*border: red solid 1px;*/ background: #6eff33; transition: 0.4s; }
+#ul_element_s_4{ list-style-type: none;/* border: red solid 1px;*/ background: #ffef2b; transition: 0.4s; }
+#ul_element_s_5{ list-style-type: none; /*border: red solid 1px;*/ background: #565656; transition: 0.4s; }
 /* this is for chat add on */
 #chat_open{float:right; /* border:red solid 1px; */width:0px; height: 100%; transition: 0.5s; background: grey;}
-.li_lists{
+#slide_button_s{	/*border: red solid 1px;*/ 	float:left; 	height: 50px; 	width: 50px; 	margin-left:5px;	/*background: grey;*/ transition: 0.7s;		}
+.li_lists
+{
 	width:200px;
 }
 .slide_element_0
@@ -97,14 +90,4 @@
 	width:90%;
 	padding:5px; 
 	margin:auto;
-}
-.slide_button_s
-{
-	/*border: red solid 1px;*/ 
-	float:left; 
-	height: 50px; 
-	width: 50px; 
-	margin-left:5px;
-	/*background: grey;*/
-
 }

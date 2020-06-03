@@ -5,7 +5,7 @@
 </head>
 <body>
 <!-- this is "FAMG" menu bar do not touch the properties. -->
-<div id="slide_menu_bar_01_s">
+<div id="slide_menu_bar_01_s" style="z-index:0; position:fixed;">
 <ul id="ul_element_s_0" onmouseover="ul_element_effectActiv_0()" onmouseout="ul_element_effectDeac_0()">
 <li id="font_deco_effect_0"><div class="li_lists"><a id="font_deco_bold_0" href="">FAMG</a></div></li>
 <li id="font_deco_effect_1"><div class="li_lists"><a id="font_deco_normal_0" href="">Who are we</a></div></li>
@@ -43,21 +43,24 @@
 </div>
 </div>
 </div>
-<!--Slide menu button-->
-<div class="slide_button_s" onclick="slidebar_button()"><img src="Images/png/famg_logo.png" style="width:50px; height:50px;"/></div>
+<!--Slide menu button z-index-0, position:aboslute.-->
+<div id="slide_button_s" onclick="slidebar_button()" style="z-index:0; position:fixed;"><img src="Images/png/famg_logo.png" style="width:50px; height:50px;"/></div>
 <!-- Default_menu will be end here -->
+<div style="z-index: -1; position:absolute; border:red solid 1px; height: 100%; width:100%;">
+<!--ADD CONTENTS HERE-->
+
+</div>
 <!--this is chatting service.-->
-<div style="float:right;  margin-left:50px; width:50px; height: 100%;"><div style="width:50px; height:85%;"></div><div style="width:50px; height:50px;"><img src="Images/png/chat.png"  style="width:50px; height:50px;" onclick="open_closechat()"/></div></div>
-<div id="chat_open" style="overflow:hidden;">
-<widgetbot
+<div style="right:0px;  margin-left:25px; margin-right:25px; width:50px; height: 100%; position:fixed; z-index:0;"><div style="width:50px; height:85%;"></div><div style="width:50px; height:50px;"><img src="Images/png/chat.png"  style="width:50px; height:50px;" onclick="open_closechat()"/></div></div>
+<div id="chat_open" style="overflow:hidden; position:fixed; z-index:0; right:100px;">
+<widgetbot 
   server="716257023075024946"
   channel="716257023075024949"
   width="800"
-  height="600"
+  height="700"
   shard="https://e.widgetbot.io"
 ></widgetbot>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 <script src="JAVASCRIPT/javascript.js"></script>
 </body>
