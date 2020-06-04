@@ -43,8 +43,30 @@
 </div>
 </div>
 </div>
+<<<<<<< Updated upstream
 <!--Slide menu button-->
 <div class="slide_button_s" onclick="slidebar_button()"><img src="images/PNG/apple.png" style="width:50px; height:50px;"/></div>
+=======
+<!--Slide menu button z-index-0, position:aboslute.-->
+<div id="slide_button_s" onclick="slidebar_button()" style="z-index:0; position:fixed;"><img src="Images/png/famg_logo.png" style="width:100px; height:100px;"/></div>
+<!-- Default_menu will be end here -->
+<div style="z-index: -1; position:absolute; border:red solid 1px; height: 100%; width:100%;">
+<!--ADD CONTENTS HERE-->
+<img src="Images/Gymbanner.jpg" style="width:100%; height:80%;">
+</div>
+<!--this is chatting service.-->
+<div style="right:0px;  margin-left:25px; margin-right:25px; width:50px; height: 100%; position:fixed; z-index:0;"><div style="width:50px; height:85%;"></div><div style="width:50px; height:50px;"><img src="Images/png/chat.png"  style="width:50px; height:50px;" onclick="open_closechat()"/></div></div>
+<div id="chat_open" style="overflow:hidden; position:fixed; z-index:0; right:100px;">
+<widgetbot 
+  server="716257023075024946"
+  channel="716257023075024949"
+  width="800"
+  height="700"
+  shard="https://e.widgetbot.io"
+></widgetbot>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+>>>>>>> Stashed changes
 <script src="JAVASCRIPT/javascript.js"></script>
 </body>
 </html>
