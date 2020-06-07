@@ -48,12 +48,28 @@
 #font_deco_effect_14{	border-bottom:black solid 1.5px;	width:0px;	transition: 1.2s;	margin-left: 8px;}
 #font_deco_effect_15{	border-bottom:black solid 1.5px;	width:0px;	transition: 1.2s;	margin-left: 8px;}
 #font_deco_effect_16{	border-bottom:black solid 1.5px;	width:0px;	transition: 1.2s;}
+<<<<<<< Updated upstream
 #ul_element_s_0{ list-style-type: none; border: red solid 1px; background: red; transition: 0.4s; }
 #ul_element_s_1{ list-style-type: none; border: red solid 1px; background: blue; transition: 0.4s; }
 #ul_element_s_2{ list-style-type: none; border: red solid 1px; background: green; transition: 0.4s; }
 #ul_element_s_3{ list-style-type: none; border: red solid 1px; background: yellow; transition: 0.4s; }
 #ul_element_s_4{ list-style-type: none; border: red solid 1px; background: orange; transition: 0.4s; }
 #ul_element_s_5{ list-style-type: none; border: red solid 1px; background: black; transition: 0.4s; }
+=======
+#ul_element_s_0{ list-style-type: none; /* border: red solid 1px;*/ background: red; transition: 0.4s; }
+#ul_element_s_1{ list-style-type: none; /*border: red solid 1px; */background: #ff5733; transition: 0.4s; }
+#ul_element_s_2{ list-style-type: none;/*border: red solid 1px;*/ background: #3355ff; transition: 0.4s; }
+#ul_element_s_3{ list-style-type: none; /*border: red solid 1px;*/ background: #6eff33; transition: 0.4s; }
+#ul_element_s_4{ list-style-type: none;/* border: red solid 1px;*/ background: #ffef2b; transition: 0.4s; }
+#ul_element_s_5{ list-style-type: none; /*border: red solid 1px;*/ background: #565656; transition: 0.4s; }
+/* this is for chat add on */
+#chat_open{float:right; /* border:red solid 1px; */width:0px; height: s%; transition: 0.5s; background: grey;}
+#slide_button_s{	/*border: red solid 1px;*/ 	float:left; 	height: 50px; 	width: 50px; 	margin-left:5px;	/*background: grey;*/ transition: 0.7s;		}
+.li_lists
+{
+	width:200px;
+}
+>>>>>>> Stashed changes
 .slide_element_0
 {
 	width:90%;
@@ -64,13 +80,21 @@
 }
 .slide_element_1
 {
+<<<<<<< Updated upstream
 	border:green solid 1px;
+=======
+	/*border:red solid 1px; */
+>>>>>>> Stashed changes
 	height:100px; 
 	width:100%;
 }
 .slide_element_2
 {
+<<<<<<< Updated upstream
 	border:blue solid 1px;
+=======
+	/* border:red solid 1px;*/
+>>>>>>> Stashed changes
 	height:80px;
 	width:80px;
 	margin:auto;
@@ -78,18 +102,27 @@
 }
 .slide_element_3
 {
+<<<<<<< Updated upstream
 	border:green solid 1px;
+=======
+	/* border:red solid 1px;*/
+>>>>>>> Stashed changes
 	height:100%;
 	width:100%;
 }
 .slide_element_4
 {
+<<<<<<< Updated upstream
 	border:blue solid 1px; 
+=======
+	/* border:red solid 1px; */ 
+>>>>>>> Stashed changes
 	height:100%;
 	width:90%;
 	padding:5px; 
 	margin:auto;
 }
+<<<<<<< Updated upstream
 .slide_button_s
 {
 	border: red solid 1px; 
@@ -104,3 +137,43 @@ a:hover
 {
 	color:black;
 }
+=======
+h1
+{
+	font-family: arial;
+	text-align: center;
+}
+
+p
+{
+	font-family: arial;
+	text-align: center;
+}
+
+.collapsible {
+	background-color: #f00;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: centre;
+	outline: none;
+	font-size: 25px;
+	transition-duration: 1s;
+	margin: 10px;
+}
+
+.active, .collapsible:hover {
+	background-color: #555;
+	transition-duration: 1s;
+}
+
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+}	
+>>>>>>> Stashed changes

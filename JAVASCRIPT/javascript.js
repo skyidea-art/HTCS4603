@@ -373,4 +373,3 @@ function slidebar_button()
 		font_normal_9.style.color = "black";
 		font_normal_10.style.color = "black";
 	}
-}
