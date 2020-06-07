@@ -138,38 +138,39 @@ a:hover
 	color:black;
 }
 =======
-h1
+{
+
+}
+
+h1, p
 {
 	font-family: arial;
 	text-align: center;
 }
 
-p
+.collapsible 
 {
-	font-family: arial;
-	text-align: center;
-}
-
-.collapsible {
+	text-align: centre;
 	background-color: #f00;
 	color: white;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
 	border: none;
-	text-align: centre;
 	outline: none;
 	font-size: 25px;
 	transition-duration: 1s;
 	margin: 10px;
 }
 
-.active, .collapsible:hover {
+.active, .collapsible:hover
+{
 	background-color: #555;
 	transition-duration: 1s;
 }
 
-.content {
+.content
+{
 	padding: 0 18px;
 	max-height: 0;
 	overflow: hidden;
