@@ -1,0 +1,151 @@
+<!Doctype>
+<html>
+<head>
+<title>Sketch_API</title>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+}
+#canvas
+{
+border: 2px solid black;
+
+}
+#brush_size
+{
+width:20px;
+height:20px;
+}
+#brush_size_01
+{
+border:2px black solid;
+width:20px; 
+height:20px; 
+display: inline-block;
+}
+</style>
+</head>
+<body>
+<div><canvas id="canvas" style="margin: auto;"></canvas></div>
+<div style="border: 2px black solid;">
+<div  id="brush_size_01" onclick="brush_draw_size_01()"><img src="Images/png/Brush.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="brush_draw_size_02()"><img src="Images/png/Brush.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="brush_draw_size_03()"><img src="Images/png/Brush.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="brush_draw_size 04()"><img src="Images/png/Brush.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="brush_draw_size_05()"><img src="Images/png/Brush.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="color_black()"><img src="Images/png/Black.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="color_red()"><img src="Images/png/Red.png" id="brush_size" /></div>
+<div  id="brush_size_01" onclick="color_blue()"><img src="Images/png/Blue.png" id="brush_size"/></div>
+<div  id="brush_size_01" onclick="color_green()"><img src="Images/png/Green.png" id="brush_size" /></div>
+<div  id="brush_size_01" onclick="eraser()"><img src="Images/png/rubber.png" id="brush_size" /></div>
+</div>
+
+<script>
+// sketch api for 
+const canvas = document.querySelector("#canvas");
+const ctx = canvas.getContext("2d");
+//resizing
+
+ //part 1 
+ //canvas.style.width = window.innerWidth;
+// canvas.style.height = window.innerHeight;
+// ctx.strokeStyle ="red";
+// ctx.strokeRect(10,10,20,50);
+// ctx.fillRect(10,10,20,50);
+// ctx.strokeStyle="blue";
+// ctx.strokeRect(20,20,20,50);
+ctx.canvas.width = 400;
+ctx.canvas.height = 400;
+//ctx.beginPath();
+//ctx.moveTo(100,100);
+//ctx.lineTo(200,100);
+//ctx.lineTo(200,150);
+//ctx.closePath();
+//ctx.stroke();
+
+//variables defaults
+let paint_on = false;
+var color_choice = "black";
+let line_width = 1;
+// size selections
+
+
+// color selections
+function brush_draw_size_01()
+{
+ctx.restore();
+line_width = 1;
+}
+function brush_draw_size_02()
+{
+ctx.restore();
+line_width = 2;
+}
+function brush_draw_size_03()
+{
+ctx.restore();
+line_width = 3;
+}
+function brush_draw_size_04()
+{
+ctx.restore();
+line_width = 4;
+}
+function brush_draw_size_05()
+{
+ctx.restore();
+line_width = 5;
+}
+function color_black()
+{
+ctx.restore();
+color_choice = "black";
+}
+function color_red()
+{
+ctx.restore();
+color_choice = "red";
+}
+function color_blue()
+{
+ctx.restore();
+color_choice = "blue";
+}
+function color_green()
+{
+ctx.restore();
+color_choice = "green";
+}
+function eraser()
+{
+ctx.restore();
+line_width = 5;
+color_choice = "white";
+}
+//eventListeners
+function startPosition(){
+paint_on = true;
+}
+function finishPosition(){
+paint_on = false;
+ctx.beginPath();
+}
+function draw(e){
+	if(!paint_on) return;
+	ctx.strokeStyle = color_choice;
+	ctx.lineWidth = line_width;
+	ctx.lineCap ="round";
+	ctx.lineTo(e.clientX, e.clientY);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(e.clientX, e.clientY);
+}
+
+//canvas variables
+canvas.addEventListener('mousedown', startPosition);
+canvas.addEventListener('mouseup', finishPosition);
+canvas.addEventListener('mousemove', draw);
+</script>
+</body>
+</html>
