@@ -2,7 +2,10 @@
 slide_comp_0 = document.getElementById("slide_menu_bar_01_s");
 slide_comp_ani01 = document.getElementById("slide_button_animation01");
 slide_comp_ani02 = document.getElementById("slide_button_animation02");
-
+draw_up_ani01 = document.getElementById("draw_up_ani_01");
+draw_up_ani02 = document.getElementById("draw_up_ani_02");
+draw_up_ani03 = document.getElementById("draw_up_ani_03");
+draw_up_ani04 = document.getElementById("draw_up_ani_04");
 font_effect_0 = document.getElementById("font_deco_effect_0");
 font_effect_1 = document.getElementById("font_deco_effect_1");
 font_effect_2 = document.getElementById("font_deco_effect_2");
@@ -57,6 +60,45 @@ font_normal_10 = document.getElementById("font_deco_normal_10");
 chat_size_0 = document.getElementById("chat_open");
 slide_fixed_0 = document.getElementById("slide_button_s");
 chat_background_animation_0 = document.getElementById("chat_open_comp_0");
+canvas_toggle = document.getElementById("canvas");
+canvas_toggle_01 = document.getElementById("canvas_01");
+
+function show_tracing_01(){
+	canvas_toggle_01.style.backgroundImage = "url('../Images/png/drawing_shape.png')";
+}
+function hide_tracing_01(){
+	canvas_toggle_01.style.backgroundImage = "url('')";
+}
+function show_tracing()
+{
+	canvas_toggle.style.backgroundImage = "url('../Images/jpg/rem_draw_grey.jpg')";
+
+}
+function hide_tracing()
+{
+	canvas_toggle.style.backgroundImage = "url('')";
+
+}
+function draw_up_0()
+{
+	draw_up_ani01.style.height = "0px";
+	draw_up_ani02.style.height = "0px";
+}
+function draw_up_1()
+{
+	draw_up_ani01.style.height = "30px";
+	draw_up_ani02.style.height = "50px";
+}
+function draw_up_2()
+{
+	draw_up_ani03.style.height = "0px";
+	draw_up_ani04.style.height = "0px";
+}
+function draw_up_3()
+{
+	draw_up_ani03.style.height = "30px";
+	draw_up_ani04.style.height = "50px";
+}
 
 function chat_animation_0(){
 	chat_background_animation_0.style.backgroundColor = "#dbd9d3";
